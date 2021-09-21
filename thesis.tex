@@ -1,0 +1,59 @@
+% Delete the MSc option if you are doing a PhD, or replace it with MPhil
+% for a Master of Philosophy thesis
+%
+% The 12pt option is required by the 2001/02 thesis regulations
+% Last update 22nd January 2020: updated department/school/faculty names
+
+% Replace PhD with MSc for MSc theses
+% Remove the twoside option for single-sided printing
+\documentclass[12pt,PhD,twoside]{muthesis}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\raggedbottom % Avoid whitespace between paragraphs.
+\begin{document}
+\title{Title}
+\author{Author} % 2019 regulations state middle name(s) should be initials
+\department{Mathematics}
+\school{Natural Sciences}
+\faculty{Science and Engineering}
+\def\wordcount{xxxxx} % A word count is required
+
+% Uncomment the line below to suppress the `List of Tables' page (optional)
+% \tablespagefalse
+
+% Uncomment the line below to suppress the `List of Figures' page (optional)
+%\figurespagefalse
+
+% Uncomment the line below to use a customised Declaration statement
+%\def\declaration{All the work in this thesis has been sourced from Google.}
+
+\beforeabstract 
+
+Abstract text here.
+
+\afterabstract
+
+% The next part is optional; however it is a good place to thank your
+% supervisor and the people responsible for providing computer support ;-)
+\prefacesection{Acknowledgments}
+
+I would like to thank...
+
+% The next line is NOT optional and MUST appear
+\afterpreface
+
+% Add the introduction (and then any other chapters...)
+\include{intro/intro}
+
+% Bibliography.
+\printbibliography[heading=bibintoc, title={Bibliography}]
+
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
