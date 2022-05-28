@@ -1,6 +1,6 @@
 # manchester-thesis-template
 
-This repository provides the LaTeX template I used for my PhD thesis. It's basically just the standard University of Manchester `muthesis.cls` class file with a few additions but one person asked me for the source code so I decided I may as well include it here. Warning: it is hacked together so I can't offer any guarantees that it will compile for you!
+This repository provides the LaTeX template I used for my PhD thesis. It's basically just the standard University of Manchester `muthesis.cls` thesis class with a few additions, but one person asked me for the source code so I decided I may as well provide it here. Warning: it is a bit hacky so I can't offer any guarantees that it will compile for you!
 
 ## Navigation
 
@@ -16,4 +16,4 @@ This repository provides the LaTeX template I used for my PhD thesis. It's basic
 
 ## Need to know
 
-1. The margins in the `pdf` above are not valid for the printable version that the University requires at submission. To get the print version, comment out the `\RequirePackage[...]{geometry}` command in `muthesis.cls`.
+1. The margins in the `pdf` above are not valid for the printable version that the university requires at submission. To get the print version, comment out the `\RequirePackage[...]{geometry}` command in `muthesis.cls`.
